@@ -388,6 +388,12 @@ namespace GeekDesk
             {
                 Guide();
             }
+
+            // 启动后自动最小化
+            if (appData.AppConfig.StartedShowPanel)
+            {
+                HideApp();
+            }
         }
 
 
@@ -652,7 +658,8 @@ namespace GeekDesk
             {
                 mainWindow.HidedSearchBox();
             }
-            mainWindow.Visibility = Visibility.Collapsed;
+            // 最小化窗口
+            mainWindow.WindowState = WindowState.Minimized;
             //if (!MarginHide.IS_HIDE)
             //{
 

@@ -19,7 +19,7 @@
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent"
-        ShowInTaskbar="False"
+        ShowInTaskbar="True"
         Opacity="1"
         Deactivated="AppWindow_Deactivated"
         SizeChanged="Window_SizeChanged"
